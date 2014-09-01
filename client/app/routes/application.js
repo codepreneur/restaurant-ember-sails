@@ -1,4 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+var ApplicationRoute = Ember.Route.extend({
+	setupController: function(){
+		this.controllerFor('food').set('model', this.store.find('food'));
+	}
 });
+
+export default ApplicationRoute;

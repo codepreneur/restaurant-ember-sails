@@ -1,4 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+var IndexRoute = Ember.Route.extend({
+	redirect: function(){
+		this.transitionTo('tables');
+	}
 });
+
+export default IndexRoute;

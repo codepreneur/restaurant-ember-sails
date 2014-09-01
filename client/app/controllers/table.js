@@ -1,4 +1,5 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-});
+var TableController = Ember.ObjectController.extend();
+
+export default TableController;
