@@ -6,6 +6,7 @@ var FoodController = Ember.ArrayController.extend({
 		addFood: function(food){
 	    var table = this.get('controllers.table.model'),
 	        tabItems = table.get('tab.tabItems');
+
 	    tabItems.createRecord({
 	      food: food,
 	      cents: food.get('cents')

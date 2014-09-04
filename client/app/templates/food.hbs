@@ -1,7 +1,7 @@
 <ul id="menu">
 	{{#each food in controller}}
 		<li>
-			<a href="#" {{action "addFood" this}}>
+			<a href="#" {{action "addFood" food}}>
 			<img {{bind-attr src="food.imageUrl"}}>
 			<p>{{food.name}}</p>
 		</li>
